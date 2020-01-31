@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:menu_tabbar/components/menu.component.dart';
-import 'package:menu_tabbar/components/menu2.component.dart';
-import 'package:menu_tabbar/components/menu3.component.dart';
+import 'package:menu_tabbar/components/tabbar.component.dart';
 
 class Home extends StatefulWidget {
 
@@ -28,7 +26,7 @@ class _Home extends State<Home> {
             ]
           )
         ),
-        bottomNavigationBar: MenuWidget3()
+        bottomNavigationBar: TabBarWidget()
     );
   }
 }
