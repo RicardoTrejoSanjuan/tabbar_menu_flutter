@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:menu_tabbar/components/menu.component.dart';
+import 'package:menu_tabbar/components/menu2.component.dart';
+import 'package:menu_tabbar/components/menu3.component.dart';
 
 class Home extends StatefulWidget {
 
@@ -25,37 +28,7 @@ class _Home extends State<Home> {
             ]
           )
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              title: Text('Home'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.business),
-              title: Text('Business'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.school),
-              title: Text('School'),
-            ),
-          ],
-        )
-        // bottomNavigationBar: new MenuTabBar(
-        //     background: Colors.blue,
-        //     iconButtons: [
-        //       new IconButton(color: Colors.blue, icon: new Icon(Icons.home, size: 30), onPressed: (){}),
-        //       new IconButton(color: Colors.blue, icon: new Icon(Icons.search, size: 30), onPressed: (){}),
-        //       new IconButton(color: Colors.blue, icon: new Icon(Icons.map, size: 30), onPressed: (){}),
-        //       new IconButton(color: Colors.blue, icon: new Icon(Icons.favorite, size: 30), onPressed: (){}),
-        //     ],
-        //     child: new Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-        //       new Container(child: new Text("Reminder", style: TextStyle(color: Colors.white, fontSize: 20)), margin: EdgeInsets.all(10)),
-        //       new Container(child: new Text("Camera", style: TextStyle(color: Colors.white, fontSize: 20)), margin: EdgeInsets.all(10)),
-        //       new Container(child: new Text("Attchment", style: TextStyle(color: Colors.white, fontSize: 20)), margin: EdgeInsets.all(10)),
-        //       new Container(child: new Text("Text Note", style: TextStyle(color: Colors.white, fontSize: 20)), margin: EdgeInsets.all(10))
-        //     ]),
-        // )
+        bottomNavigationBar: MenuWidget3()
     );
   }
 }
